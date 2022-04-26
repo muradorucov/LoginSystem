@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--== Google fonts link  ==-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+
+
+    <!--== Font awesome links  ==-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!--== Bootstrap CSS ==-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--== CSS fayls  ==-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./crumbs.css">
+    <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        body {
+            font-family: "Istok Web", sans-serif;
+        }
+        
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        .section-heading {
+            margin-bottom: 56px;
+            text-align: center;
+        }
+        
+        .section-heading p {
+            padding-top: 8px;
+            color: #63636b;
+            line-height: 24px;
+        }
+        
+        .section-heading-span {
+            font-size: 1rem;
+            color: #2c7ae7;
+        }
+        
+        .section-heading-h2 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin: 0px;
+            margin-top: 10px;
+            font-family: Montserrat, sans-serif;
+            color: #3b3b44;
+        }
+        
+        .copyright-padding {
+            padding: 3rem 0;
+        }
+        /* footer section start */
+        
+        #copyright {
+            border-bottom: solid 1px #72727c;
+            background-color: #303036;
+            width: 100%;
+            color: #fff;
+        }
+        
+        .copyright-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #c6cdce;
+        }
+        
+        .conditions,
+        .privacy {
+            margin-right: 8px;
+            color: #c6cdce;
+            border-bottom: dashed #c6cdce 1px;
+        }
+        
+        .conditions:hover,
+        .privacy:hover {
+            border-bottom: solid #c6cdce 1px;
+        }
+        /* footer Copyright end */
+        
+        .geriqayt {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            position: fixed;
+            z-index: 100000000000000000;
+            background-color: #fffffff8;
+            right: 5px;
+            bottom: 5px;
+            border: #b7b7be 1px solid;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        
+        .geriqayt i {
+            color: #2c7ae7;
+            margin-left: 7px;
+            margin-top: 7px;
+            transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+        }
+        /*  crumbs section start  */
+        
+        #crumbs {
+            background-color: #f0f4f8;
+        }
+        
+        .crumbs-bread {
+            padding: 18px 0;
+        }
+        
+        .crumbs-info {
+            font-size: 14px;
+            margin: 0 30px;
+        }
+        
+        .crumbs-home a {
+            color: #63636b;
+        }
+        
+        .crumbs-home a:hover {
+            text-decoration: underline;
+        }
+        
+        .crumbs-info i {
+            color: #2c7ae7;
+            padding: 0px 7px;
+        }
+        
+        .crumbs-about {
+            color: #2c7ae7;
+        }
+        /* crumbs section end  */
+        
+        .form-login {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .form-field {
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+        
+        .form-field-input {
+            width: 100%;
+            font-weight: 400;
+            padding: 15px 10px;
+            border-radius: 0.375rem;
+            border: 1px solid #d4d4e1;
+            outline: none;
+        }
+        
+        .form-field-input:focus {
+            border: solid 1px #568ad3;
+        }
+        
+        .login-bttn-main {
+            width: 100%;
+            font-size: 1.125rem;
+            color: #ffffff;
+            padding: 15px 10px;
+            border-radius: 0.375rem;
+            border: 0;
+            outline: none;
+            background: linear-gradient(to right, #568ad3 0, #0f58bd 100%);
+        }
+        
+        .login-bttn-main:focus {
+            border: 0;
+            outline: none;
+        }
+        
+        .login-bttn-main:hover {
+            background: linear-gradient(to left, #568ad3 0, #0f58bd 100%);
+        }
+        
+        .checkbox {
+            position: relative;
+        }
+        
+        .checkbox-input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        .checkbox-label {
+            position: relative;
+            line-height: 1.25rem;
+            font-weight: 400;
+            margin: 0;
+            font-size: 1rem;
+            cursor: pointer;
+            padding-left: 1.875rem;
+        }
+        
+        label {
+            display: inline-block;
+        }
+        
+        .checkbox-label::after {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            font-size: 0.875rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            line-height: 1.375rem;
+            color: #2c7ae7;
+            opacity: 0;
+            transition: all 0.25s;
+        }
+        
+        .checkbox-label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            width: 1.25rem;
+            height: 1.25rem;
+            min-width: 1.25rem;
+            border: 1px solid #d4d4e1;
+            color: #2c7ae7;
+            border-radius: 0.25rem;
+            transition: all 0.25s;
+        }
+        
+        .checkbox-input:checked+.checkbox-label::after {
+            opacity: 1;
+        }
+        
+        .form-or-text {
+            text-transform: uppercase;
+            text-align: center;
+            margin: 25px 0;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            color: #63636b;
+        }
+        
+        .form-or-text span {
+            position: relative;
+            z-index: 1;
+            padding: 0 10px;
+            background-color: #ffffff;
+        }
+        
+        .form-or-text span::before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            width: 1000px;
+            height: 1px;
+            margin-top: -1px;
+            background-color: #d4d4e1;
+        }
+        
+        .form-or-text span::after {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            width: 1000px;
+            height: 1px;
+            margin-top: -1px;
+            background-color: #d4d4e1;
+        }
+        
+        .social-login {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-size: 1rem;
+            margin-left: -15px;
+            margin-bottom: -15px;
+        }
+        
+        .social-login li {
+            margin-left: 15px;
+            margin-bottom: 15px;
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+        }
+        
+        .social-login li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 1rem;
+            padding: calc(0.95em - 1px) 1rem;
+            text-decoration: none;
+        }
+        
+        .link-facebook {
+            background-color: #29487d;
+            transition: all 0.25s;
+        }
+        
+        .link-facebook:hover,
+        .link-twitter:hover,
+        .link-google-plus:hover {
+            opacity: 0.9;
+            transition: all 0.25s;
+            -webkit-transition: all 0.25s;
+            -moz-transition: all 0.25s;
+            -ms-transition: all 0.25s;
+            -o-transition: all 0.25s;
+        }
+        
+        .link-twitter {
+            background-color: #1da1f2;
+            transition: all 0.25s;
+        }
+        
+        .link-google-plus {
+            background-color: #e85858;
+            transition: all 0.25s;
+        }
+        
+        .social-login i {
+            overflow: hidden;
+            vertical-align: middle;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a name="geriqayt"></a>
+    <!-- crumbs section start -->
+    <section id="crumbs">
+        <div class="container crumbs-bread">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="crumbs-info">
+                        <span class="crumbs-home"><a href="/">Home</a></span> <i class="fas fa-angle-right"></i>
+                        <span class="crumbs-about"><a href="/register">Register</a></span><i class="fas fa-angle-right"></i>
+                        <span class="crumbs-about"><a href="/login">Login</a></span><i class="fas fa-angle-right"></i>
+                        <span class="crumbs-about"><a href="/teacherregister">Teacher Register</a></span><i class="fas fa-angle-right"></i>
+                        <span class="crumbs-about"><a href="/teacherlogin">Teacher Login</a></span><i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- crumbs section end -->
+    {% block content %} {% endblock content %}
+
+    <a href="#geriqayt" class="geriqayt">
+        <i class="material-icons"> east</i>
+    </a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
